@@ -18,7 +18,7 @@ const galleryListEl = galleryItems.map(({ preview, original, description}) => {
         </div>`;
 })
 
-let galleryMarkup = galleryListEl.join('');
+const galleryMarkup = galleryListEl.join('');
 galleryRef.insertAdjacentHTML('beforeend', galleryMarkup);
 
 function onImgClick(e) {
